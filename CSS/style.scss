@@ -1,0 +1,225 @@
+@import url(/CSS/null.css);
+
+$colorBlack:#1D1D1D;
+$colorGrey:#626262;
+;
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: none
+    }
+
+    input {
+
+        border: none;
+    }
+
+    .container {
+        max-width: 956px;
+        margin: 0px auto;
+    }
+}
+
+.header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 32px;
+
+    .header__wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .header__logo {
+        padding: 30px 0;
+        flex: 0 0;
+    }
+
+    .header__body {
+        display: flex;
+        flex: 0 1 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .header__button {
+        font-size: 13px;
+        padding: 14px 20px;
+        color: $colorBlack;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 2px;
+        margin-right: 16px;
+    }
+
+    .header__card {
+        padding: 0 10px;
+    }
+
+}
+
+
+.search {
+    .search__input {
+        height: 48px;
+        margin-bottom: 56px;
+
+        input {
+            width: 100%;
+            outline: none;
+            border-bottom: 1px solid #636363a9;
+            color: $colorGrey;
+            font-size: 16px;
+            line-height: 24px;
+            padding-top: 24px;
+
+        }
+    }
+}
+
+
+
+.restaurants {
+    margin-bottom: 65px;
+
+    .restaurants__title {
+        font-size: 22px;
+        line-height: 34px;
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 16px;
+    }
+
+    .restaurants__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        max-width: 33.333%;
+        margin-bottom: 16px;
+
+        img {
+            max-width: 308px;
+            height: 256px;
+            margin-bottom: 16px;
+        }
+
+        h4 {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            display: flex;
+
+
+        }
+
+        .item__type {
+            color: $colorGrey;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 10px;
+
+        }
+
+        .item__time {
+            color: $colorBlack;
+            font-size: 13px;
+            margin-bottom: 24px;
+
+        }
+
+    }
+
+
+}
+
+.footer {
+    color: #ffff;
+    background-color: #262626;
+}
+
+.container__wrapper {}
+
+.footer__big-logo {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid #636363a9;
+    width: 100%;
+    margin-bottom: 32px;
+
+
+}
+
+.footer__body {
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+
+}
+
+.footer__language-and-social {
+    max-width: 33.333%;
+}
+
+.footer__language-list {}
+
+.footer__social {}
+
+.footer_soccial-tag {}
+
+.footer__social-icons {}
+
+.footer__social-icon {}
+
+.footer__info-and-partners {
+    max-width: 33.333%;
+}
+
+.footer__other-info {
+    max-width: 33.333%;
+}
+
+.footer__store-app {
+    border-top: 1px solid #636363a9;
+    padding: 41px 0 39px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #636363a9;
+}
+
+.footer__google_play {}
+
+.footer__app-store {}
+
+.footer__down {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copy {}
+
+.footer__data {}
+
+.footer__agreement {
+    font-size: 11px;
+    line-height: 13px;
+}
