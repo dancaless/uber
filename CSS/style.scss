@@ -94,7 +94,7 @@ body {
 
 
 .restaurants {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
 
     .restaurants__title {
         font-size: 22px;
@@ -111,11 +111,12 @@ body {
     }
 
     .item {
-        max-width: 33.333%;
+        max-width: calc(308/956*100%);
         margin-bottom: 16px;
 
         img {
-            max-width: 308px;
+            width: 100%;
+            object-fit: cover;
             height: 256px;
             margin-bottom: 16px;
         }
@@ -155,71 +156,80 @@ body {
 .footer {
     color: #ffff;
     background-color: #262626;
-}
 
-.container__wrapper {}
-
-.footer__big-logo {
-    padding: 56px 0 40px;
-    border-bottom: 1px solid #636363a9;
-    width: 100%;
-    margin-bottom: 32px;
+    .footer__big-logo {
+        padding: 56px 0 40px;
+        border-bottom: 1px solid #636363a9;
+        width: 100%;
+        margin-bottom: 32px;
 
 
-}
+    }
 
-.footer__body {
-    font-size: 13px;
-    line-height: 15px;
-    display: flex;
+    .footer__body {
+        font-size: 13px;
+        line-height: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 40px;
 
-}
+        p {
+            padding-bottom: 23px;
+        }
 
-.footer__language-and-social {
-    max-width: 33.333%;
-}
+        p:last-child {
+            padding-bottom: 0px;
+        }
 
-.footer__language-list {}
+    }
 
-.footer__social {}
+    .footer__language-and-social {
+        width: calc(308/956*100%);
+    }
 
-.footer_soccial-tag {}
+    .footer__language-list {}
 
-.footer__social-icons {}
+    .footer__social {}
 
-.footer__social-icon {}
+    .footer_soccial-tag {}
 
-.footer__info-and-partners {
-    max-width: 33.333%;
-}
+    .footer__social-icons {}
 
-.footer__other-info {
-    max-width: 33.333%;
-}
+    .footer__social-icon {}
 
-.footer__store-app {
-    border-top: 1px solid #636363a9;
-    padding: 41px 0 39px;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #636363a9;
-}
+    .footer__info {
+        min-width: 308px;
+        max-width: 33.333%;
+        padding-top: 7px;
+    }
 
-.footer__google_play {}
 
-.footer__app-store {}
 
-.footer__down {
-    padding: 40px 0 30px;
-    display: flex;
-    justify-content: space-between;
-}
+    .footer__store-app {
+        border-top: 1px solid #636363a9;
+        padding: 41px 0 39px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #636363a9;
+    }
 
-.footer__copy {}
+    .footer__google_play {
+        padding-right: 40px;
+    }
 
-.footer__data {}
+    .footer__down {
+        padding: 40px 0 30px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.footer__agreement {
-    font-size: 11px;
-    line-height: 13px;
+    .footer__copy {}
+
+    .footer__data {}
+
+    .footer__agreement {
+        font-size: 11px;
+        line-height: 13px;
+    }
 }

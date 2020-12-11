@@ -95,7 +95,7 @@ body .container {
 }
 
 .restaurants {
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .restaurants .restaurants__title {
@@ -118,12 +118,14 @@ body .container {
 }
 
 .restaurants .item {
-  max-width: 33.333%;
+  max-width: calc(308/956*100%);
   margin-bottom: 16px;
 }
 
 .restaurants .item img {
-  max-width: 308px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 256px;
   margin-bottom: 16px;
 }
@@ -158,34 +160,46 @@ body .container {
   background-color: #262626;
 }
 
-.footer__big-logo {
+.footer .footer__big-logo {
   padding: 56px 0 40px;
   border-bottom: 1px solid #636363a9;
   width: 100%;
   margin-bottom: 32px;
 }
 
-.footer__body {
+.footer .footer__body {
   font-size: 13px;
   line-height: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
 }
 
-.footer__language-and-social {
+.footer .footer__body p {
+  padding-bottom: 23px;
+}
+
+.footer .footer__body p:last-child {
+  padding-bottom: 0px;
+}
+
+.footer .footer__language-and-social {
+  width: calc(308/956*100%);
+}
+
+.footer .footer__info {
+  min-width: 308px;
   max-width: 33.333%;
+  padding-top: 7px;
 }
 
-.footer__info-and-partners {
-  max-width: 33.333%;
-}
-
-.footer__other-info {
-  max-width: 33.333%;
-}
-
-.footer__store-app {
+.footer .footer__store-app {
   border-top: 1px solid #636363a9;
   padding: 41px 0 39px;
   display: -webkit-box;
@@ -197,7 +211,11 @@ body .container {
   border-bottom: 1px solid #636363a9;
 }
 
-.footer__down {
+.footer .footer__google_play {
+  padding-right: 40px;
+}
+
+.footer .footer__down {
   padding: 40px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,7 +225,7 @@ body .container {
           justify-content: space-between;
 }
 
-.footer__agreement {
+.footer .footer__agreement {
   font-size: 11px;
   line-height: 13px;
 }
