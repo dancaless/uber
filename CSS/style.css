@@ -175,14 +175,14 @@ body .container {
   color: white;
 }
 
-.footer .footer__big-logo {
+.footer__big-logo {
   padding: 56px 0 40px;
   border-bottom: 1px solid #636363a9;
   width: 100%;
   margin-bottom: 32px;
 }
 
-.footer .footer__body {
+.footer__body {
   font-size: 13px;
   color: white;
   line-height: 15px;
@@ -197,19 +197,19 @@ body .container {
   padding-bottom: 40px;
 }
 
-.footer .footer__body .ref {
+.footer__body .ref {
   padding-bottom: 23px;
 }
 
-.footer .footer__body p:last-child {
+.footer__body p:last-child {
   padding-bottom: 0px;
 }
 
-.footer .footer__language-and-social {
+.footer__language-and-social {
   width: calc(308/956*100%);
 }
 
-.footer .footer__language-list select {
+.footer__language-list select {
   color: white;
   background: #3B3B3B url(/img/Stores/world.svg) 16px 50% no-repeat;
   width: calc(227/308*100%);
@@ -217,7 +217,7 @@ body .container {
   margin-bottom: 33px;
 }
 
-.footer .footer_soccial-tag {
+.footer_soccial-tag {
   font-size: 16px;
   margin-bottom: 17px;
   display: -webkit-box;
@@ -225,21 +225,21 @@ body .container {
   display: flex;
 }
 
-.footer .footer_soccial-tag .fotter__sharp {
+.footer_soccial-tag .fotter__sharp {
   color: #57AD56;
 }
 
-.footer .footer__social-icon {
+.footer__social-icon {
   margin-right: 10px;
 }
 
-.footer .footer__info {
+.footer__info {
   min-width: 308px;
   max-width: 33.333%;
   padding-top: 7px;
 }
 
-.footer .footer__store-app {
+.footer__store-app {
   border-top: 1px solid #636363a9;
   padding: 41px 0 39px;
   display: -webkit-box;
@@ -251,19 +251,19 @@ body .container {
   border-bottom: 1px solid #636363a9;
 }
 
-.footer .footer__store-app .app {
+.app {
   opacity: 0.6;
 }
 
-.footer .footer__store-app .app:hover {
+.app:hover {
   opacity: 1;
 }
 
-.footer .footer__google_play {
+.footer__google_play {
   padding-right: 40px;
 }
 
-.footer .footer__down {
+.footer__down {
   font-size: 11px;
   line-height: 13px;
   padding: 40px 0 30px;
