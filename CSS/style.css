@@ -5,28 +5,35 @@ body {
   font-weight: normal;
 }
 
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-style: normal;
   font-weight: normal;
 }
 
-body a {
+a {
   color: #1D1D1D;
   text-decoration: none;
 }
 
-body input {
+input {
   border: none;
 }
 
-body .container {
+.container {
   max-width: 956px;
   margin: 0px auto;
+  padding: 0 8px;
+}
+
+@media (max-width: 770px) {
+  .container {
+    max-width: none;
+  }
 }
 
 .header {
@@ -84,6 +91,12 @@ body .container {
   padding: 0 10px;
 }
 
+@media (max-width: 580px) {
+  .header .header__card {
+    display: none;
+  }
+}
+
 .search .search__input {
   height: 48px;
   margin-bottom: 56px;
@@ -123,12 +136,30 @@ body .container {
 }
 
 .restaurants .item {
-  max-width: calc(308/956*100%);
   margin-bottom: 16px;
   overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32.217%;
+          flex: 0 0 32.217%;
 }
 
-.restaurants .item img {
+@media (max-width: 770px) {
+  .restaurants .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48.936%;
+            flex: 0 0 48.936%;
+  }
+}
+
+@media (max-width: 580px) {
+  .restaurants .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.restaurants img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -138,29 +169,29 @@ body .container {
   transition: 0.2s ease-in;
 }
 
-.restaurants .item img:hover {
+.restaurants img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.restaurants .item h4 {
+.restaurants h4 {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 4px;
 }
 
-.restaurants .item li {
+.restaurants li {
   display: inline-block;
 }
 
-.restaurants .item .item__type {
+.restaurants .item__type {
   color: #626262;
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 10px;
 }
 
-.restaurants .item .item__time {
+.restaurants .item__time {
   color: #1D1D1D;
   font-size: 13px;
   margin-bottom: 24px;
@@ -205,8 +236,14 @@ body .container {
   padding-bottom: 0px;
 }
 
-.footer__language-and-social {
+.footer__item {
   width: calc(308/956*100%);
+}
+
+@media (max-width: 580px) {
+  .footer__item {
+    width: 100%;
+  }
 }
 
 .footer__language-list select {
@@ -231,12 +268,6 @@ body .container {
 
 .footer__social-icon {
   margin-right: 10px;
-}
-
-.footer__info {
-  min-width: 308px;
-  max-width: 33.333%;
-  padding-top: 7px;
 }
 
 .footer__store-app {
