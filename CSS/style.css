@@ -254,6 +254,10 @@ input {
   margin-bottom: 33px;
 }
 
+.footer__social {
+  padding-bottom: 40px;
+}
+
 .footer_soccial-tag {
   font-size: 16px;
   margin-bottom: 17px;
